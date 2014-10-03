@@ -52,3 +52,12 @@ docs/_build/
 
 # PyBuilder
 target/
+
+
+# My development
+pic
+.idea
+
+#My Developer
+*.json
+*.swp
