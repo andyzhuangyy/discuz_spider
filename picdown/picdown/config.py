@@ -25,7 +25,10 @@ src_dict = {
         #'username' : 'togetav',
         #'password' : 'togetav',
         'urls' : [
-            'forumdisplay.php?fid=5', #tupatianxia
+            'forumdisplay.php?fid=5&page=1' #tupatianxia
+            #'forumdisplay.php?fid=5&page=3', #tupatianxia
+            #'forumdisplay.php?fid=5&page=4', #tupatianxia
+            #'forumdisplay.php?fid=5&page=5', #tupatianxia
             #'forumdisplay.php?fid=86', #zouguangtoupai
             #'forumdisplay.php?fid=53', #yazhoutietu
             #'forumdisplay.php?fid=59', #wangyouzipai
@@ -33,7 +36,7 @@ src_dict = {
          ],
         'picpage_xpath' : '//td[@class="f_title"]/a[1]/@href',
         'pic_xpath': '//div[@class="t_msgfont"][1]/img/@src',
-        'text_xpath': '//tr[@class="head"]/td/text()',
+        'text_xpath': '//tr[@class="header"]/td/text()',
         #'time_xpath': '//table[@class="t_msg"]/text()',
         #'next_xpath': '//a[@class="nxt"]/@href',
         #'maingate_xpath': '//div[@class="info"]/a/@href',

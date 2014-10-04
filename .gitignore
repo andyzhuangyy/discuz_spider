@@ -61,3 +61,4 @@ pic
 #My Developer
 *.json
 *.swp
+.DS_Store

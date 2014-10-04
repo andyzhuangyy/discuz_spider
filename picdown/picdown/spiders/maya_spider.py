@@ -65,11 +65,11 @@ class MayaSpider(BaseSpider):
         item['site_url'] = response.url
         #item['time'] = response_sel.xpath(cur_dict['time_xpath']).extract()[:1]
         item['text'] = sel.xpath(cfgdict['text_xpath']).extract()
-
+        self.log('text : %s'%item['text'])
         image_urls = []
         links = sel.xpath(cfgdict['pic_xpath']).extract()
-        for pic in links:
-            self.log('pic links: %s'%pic)
+        for i, pic in enumerate(links):
+            self.log('pic %d, links: %s'%(i+1, pic))
             image_urls.append(pic)
         item['image_urls'] = image_urls
         yield item
